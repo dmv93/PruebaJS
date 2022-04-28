@@ -10,7 +10,7 @@ EL SEGUNDO COMENTADO
 1. Solicita al usuario que elija entre la opción 1 o 2:
 Se le debe pedir dos número al usuario e indicar si son pares y múltiplos de 7 ambos, uno de ellos o ninguno.
 Se le debe pedir una palabra y comprobar si empieza o termina por a
-*/
+
 
 var elegir = prompt("Elige entre la opción 1 o 2");
 elegir = parseInt(elegir);
@@ -86,19 +86,22 @@ if (elegir == 1) {
 } else {
   alert("Error al introducir los datos, recarga la página y hazlo de nuevo");
 }
-
+*/
 /*
 
 Solicita una frase al usuario y contando los espacios que tiene, indica de cuántas palabras consta.
 
+*/
 
 alert('A continuación tienes que darme una frase')
 var eleccionUser = prompt('Dime la frase');
+var retorno = " "
 
-var comprobar = eleccionUser.split(' ')
-var count = 0;
+//var comprobar = eleccionUser.split(' ')
+var count = 1;
 
-for (let i = 0; i < comprobar.length; i++) {
+for (let i = 0; i <= eleccionUser.length; i++) {
+    if(eleccionUser[i] === retorno)
     count++
 }
 
@@ -106,4 +109,4 @@ alert('El número de palabras que tiene tu frase es de ' + count)
 
 
 
-*/
+
